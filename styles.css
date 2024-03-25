@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Primary */
+
+  --main-Blue: hsl(223, 87%, 63%);
+
+  /*  Secondary */
+
+  --main-Pale-Blue: hsl(223, 100%, 88%);
+  --main-Light-Red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+
+  --main-Gray: hsl(0, 0%, 59%);
+  --main-Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 4rem;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--main-Gray);
+  margin-bottom: 15px;
+}
+
+span {
+  color: black;
+  font-weight: 600;
+}
+
+.subscribe {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: cover;
+}
+
+.email-validation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  border-radius: 25px 25px 25px 25px;
+  border: 1px solid;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--main-Light-Red);
+  font-size: 12px;
+  opacity: 90%;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+button {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 90%;
+  height: 40px;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  background-color: var(--main-Blue);
+  margin-bottom: 40px;
+}
+
+.dashboard {
+  width: 30%;
+  min-width: 350px;
+  margin-bottom: 50px;
+}
+
+.icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.icon {
+  border: 1px solid var(--main-Gray);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: blue;
+}
+
+.copy {
+  font-size: 1rem;
+  color: var(--main-Gray);
+  margin-bottom: 30px;
+}
+
+.attribution {
+  color: hsl(228, 45%, 44%);
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    height: cover;
+  }
+
+  button:hover {
+    background-color: var(--main-Pale-Blue);
+    box-shadow: 0px 5px 5px var(--main-Gray);
+  }
+
+  .icon:hover {
+    border: 1px solid var(--main-Gray);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--main-Blue);
+  }
+}
