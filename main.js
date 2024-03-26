@@ -2,7 +2,6 @@ let inputEmail = document.getElementById("email");
 let button = document.getElementById("button");
 
 button.addEventListener("click", (event) => {
-  event.preventDefault();
   validateEmail(inputEmail.value);
 });
 
