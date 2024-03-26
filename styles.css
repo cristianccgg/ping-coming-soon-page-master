@@ -147,6 +147,20 @@ button {
   text-align: center;
 }
 
+button:hover {
+  background-color: var(--main-Pale-Blue);
+  box-shadow: 0px 5px 5px var(--main-Gray);
+}
+
+.icon:hover {
+  border: 1px solid var(--main-Gray);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--main-Blue);
+}
+
 @media screen and (min-width: 700px) {
   .form-container {
     display: flex;
@@ -193,20 +207,6 @@ button {
     height: 40px;
     border: none;
     border-radius: 25px 25px 25px 25px;
-    background-color: var(--main-Blue);
-  }
-
-  button:hover {
-    background-color: var(--main-Pale-Blue);
-    box-shadow: 0px 5px 5px var(--main-Gray);
-  }
-
-  .icon:hover {
-    border: 1px solid var(--main-Gray);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
     background-color: var(--main-Blue);
   }
 }
