@@ -38,8 +38,8 @@ body {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 20px;
-  height: 100%;
-  max-width: 1440px;
+  min-height: 100%;
+  max-width: 100%;
 }
 
 .logo {
@@ -171,9 +171,9 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    max-height: 100vh;
+    margin: auto;
+    min-height: 100%;
+    width: cover;
     border: solid;
   }
 
